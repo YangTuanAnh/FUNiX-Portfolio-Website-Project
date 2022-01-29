@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/sushi.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/contact.css">
+        <script src="js/contact.js"></script>
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <h1 class="navbar-brand">Yang's Blog Portfolio</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link nav-item" href="index.html">Home <i class="fa fa-home"></i></a>
+                        <a class="nav-link nav-item" href="about.html">About <i class="fa fa-address-card"></i></a> 
+                        <a class="nav-link nav-item" href="post.html">Blog Posts <i class="fa fa-book"></i></a>
+                        <a class="nav-link nav-item" href="comments.html">Comments/Share <i class="fa fa-commenting"></i></a>
+                        <a class="nav-link nav-item" href="contact.html" >Contact <i class="fa fa-phone"></i></a>
+                    <div>
+                </div>  
+            </nav>
+        </header>
+        <main>
+            <form name="form">
+                <h2>Contact</h2>
+                <hr>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                        <input id="name" type="text" name="name" placeholder="Enter your name.">
+                        <span id="nameerror"></span><br>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                        <input id="email" type="email" name="email" placeholder="Enter your email address." >
+                        <span id="emailerror"></span><br>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                        <input id="subject" type="text" name="subject" placeholder="Enter your subject.">
+                        <span id="subjecterror"></span><br>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="10" cols="50" placeholder="Enter your message."></textarea>
+                    <span id="messageerror"></span><br>
+                </div>
+                    <input type="submit" value="Submit" onclick="return validate();"><br>
+            </form>
+            <section>
+                <h2>Reach out to me at</h2>
+                <a href="mailto:yangtuananh2003@gmail.com">
+                    <h3>yangtuananh2003@gmail.com</h3>
+                </a>
+                <a href="https://github.com/YangTuanAnh" target=_BLANK>
+                    <i class="fa fa-github fa-2x" style="margin-left: 10px;margin-right: 10px;"></i>
+                </a>
+                <a href="https://www.facebook.com/tuananh.yang.73/" target=_BLANK>
+                    <i class="fa fa-facebook fa-2x" style="margin-left: 10px;margin-right: 10px;"></i>
+                </a>
+                <a href="https://www.instagram.com/yangtuananh/" target=_BLANK>
+                    <i class="fa fa-instagram fa-2x" style="margin-left: 10px;margin-right: 10px;"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCu0C90MQEb9izemDqIzpSFQ" target=_BLANK>
+                    <i class="fa fa-youtube-play fa-2x" style="margin-left: 10px;margin-right: 10px;"></i>
+                </a>
+            </section>
+        </main>
+        <footer class="bg-light">
+            &copy; 2021 by Yang's Blog Portfolio
+        </footer>
+    </body>
+</html>
